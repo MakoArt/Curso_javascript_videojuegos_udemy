@@ -412,6 +412,10 @@ record.textContent=localStorage.getItem('record')
                      puntuacion.textContent=puntuacionVariable +=1
                       
                      puntuacionVariable+=1
+
+                    //  if(puntuacionVariable>50){
+                    //      window.location.href='./nivel2/index.html'
+                    //  }
               
                     
                   }
