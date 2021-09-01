@@ -1,0 +1,30 @@
+BLOQUES DEL CURSO 
+
+1.Javascript ,enfocado a videojuegos  
+
+2.Parte técnica del juego(fraccionar el juego en partes) :
+
+-animaciones 
+-gráficos
+-eventos de teclado
+-timers 
+-colisiones
+-localstorage
+
+3.El juego 
+
+4.Fraccionar el código en varios archivos de
+
+
+5.Subir ese juego a netlify o a github pages . 
+
+
+*************************************************************
+ 
+20 primeros que hagan un nivel mas de videojuegos . 
+
+5 primeros se llevan el segundo de videojuegos gratis 
+15 siguientes se llevan un descuento al minimo precio 
+
+5 primeros se llevan el curso de js gratis .
+15 siguientes se llevan el descuento al minimo del curso de javascript 
