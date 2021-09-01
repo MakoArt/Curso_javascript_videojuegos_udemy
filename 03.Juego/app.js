@@ -9,7 +9,7 @@ const cielo='black'
 let colisionEnemigo=false
 let colisionNave=false
 
-vidas
+
  
 //array
  const planetasArray=[]
@@ -390,6 +390,36 @@ record.textContent=localStorage.getItem('record')
     arrayEnemigos.map(arrayEnemigo=>{
         balasArray.map(balaArray=>{
 
+             //nuestros proyectiles chocan con los enemigos 
+          //hacemos un mapeo del array que contiene mis 
+          //proyectiles
+
+           
+            arrayBalasNave.map(arrayBalaNave=>{
+
+                if(arrayBalaNave.posX+10>=arrayEnemigo.posX&& 
+                  arrayBalaNave.posY>=arrayEnemigo.posY && 
+                  arrayBalaNave.posY<=arrayEnemigo.posY+50 && 
+                  arrayBalaNave.posX<=arrayEnemigo.posX+50){
+        
+                     arrayEnemigo.posX=1200
+                     arrayBalaNave.posX=naveInstancia.posX+22
+                  
+                     colisionEnemigo=true
+        
+                     explosion.play()
+        
+                     puntuacion.textContent=puntuacionVariable +=1
+                      
+                     puntuacionVariable+=1
+              
+                    
+                  }
+                
+                
+                })
+            
+
      //colision nave con los enemigos
      
       if(naveInstancia.posX+50>=arrayEnemigo.posX && 
@@ -444,33 +474,8 @@ record.textContent=localStorage.getItem('record')
 
             }
 
-        //nuestros proyectiles chocan con los enemigos 
-        //hacemos un mapeo del array que contiene mis 
-        //proyectiles
-
-        arrayBalasNave.map(arrayBalaNave=>{
-
-        if(arrayBalaNave.posX+10>=arrayEnemigo.posX&& 
-          arrayBalaNave.posY>=arrayEnemigo.posY && 
-          arrayBalaNave.posY<=arrayEnemigo.posY+50 && 
-          arrayBalaNave.posX<=arrayEnemigo.posX+50){
-
-             arrayEnemigo.posX=1200
-             arrayBalaNave.posX=naveInstancia.posX+22
-          
-             colisionEnemigo=true
-
-             explosion.play()
-
-             puntuacion.textContent=puntuacionVariable+=1
-
       
-            
-          }
-        
-        
-        })
-    
+   
     
     
     })
@@ -549,7 +554,7 @@ function borraCanvas(){
 
 function principal(){
     requestAnimationFrame(principal)
-    borrarCanvas()
+    borraCanvas()
    
    
     

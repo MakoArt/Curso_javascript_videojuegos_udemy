@@ -1,0 +1,19 @@
+
+body{
+    background-image: url('./img/alien-544193_1920.jpg');
+    background-size: cover;
+    background-color: rgb(25, 25, 155);
+    color:white;
+    text-align: center;
+    font-family: 'code';
+
+}
+button{
+    width:100%;
+    height: 40px;
+    font-family: 'code';
+}
+@font-face {
+    font-family:'code' ;
+    src: url('./fonts/PressStart2P-Regular.ttf');
+}
